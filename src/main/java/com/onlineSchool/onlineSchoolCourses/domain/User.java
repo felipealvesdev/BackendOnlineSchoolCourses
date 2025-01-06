@@ -26,5 +26,8 @@ public class User {
     private UserRole userRole;
 
     @OneToMany(mappedBy = "instructor", cascade = CascadeType.ALL, orphanRemoval = true)
-    private List<Course> coursesTaught;
+    private List<Course> courseList;
+
+    @OneToMany(mappedBy = "student", cascade = CascadeType.ALL, orphanRemoval = true)
+    private List<Progress> progressList;
 }
