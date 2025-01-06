@@ -25,4 +25,8 @@ public class Lesson {
     @JoinColumn(name = "course_id", nullable = false)
     private Course course;
 
+    @ManyToOne
+    @JoinColumn(name = "progress_id", nullable = false)
+    private Progress progress;
+
 }
