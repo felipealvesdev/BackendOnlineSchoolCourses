@@ -1,5 +1,6 @@
 package com.onlineSchool.onlineSchoolCourses.dtos;
 
+import com.onlineSchool.onlineSchoolCourses.domain.Lesson;
 import com.onlineSchool.onlineSchoolCourses.domain.User;
 
 import java.util.List;
