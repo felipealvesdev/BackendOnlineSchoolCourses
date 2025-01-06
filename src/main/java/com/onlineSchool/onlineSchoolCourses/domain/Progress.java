@@ -27,7 +27,7 @@ public class Progress {
     private User student;
 
     @OneToMany(mappedBy = "progress", cascade = CascadeType.ALL, orphanRemoval = true)
-    private List<Lesson> lesson;
+    private List<Lesson> lessonList;
 
     @Enumerated(EnumType.STRING)
     private ProgressStatus progressStatus;
